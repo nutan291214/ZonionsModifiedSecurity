@@ -1,0 +1,43 @@
+<!-- <div id="app">
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <a href="#" class="navbar-brand"><i class="fas fa-utensils" style="font-size: 24px;">&nbsp;ZONIONS</i></a>
+    <ul class="navbar-nav mr-auto" routerLinkActive="active">
+      <li class="nav-item" *ngIf="showHomeBoard">
+        <a href="/home" class="nav-link" routerLink="home">Active Restaurants </a>
+      </li>
+      <li class="nav-item" *ngIf="showCreateBoard">
+        <a href="/create" class="nav-link" routerLink="create">Add Restaurant</a>
+      </li>
+      <li class="nav-item" *ngIf="showListBoard">
+        <a href="/restaurants" class="nav-link" routerLink="restaurants">Restaurants</a> 
+      </li>
+      <li class="nav-item">
+        <a href="/user" class="nav-link" *ngIf="user" routerLink="user">User</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
+      <li class="nav-item" style="font-size: 24px;">
+        <a href="/register" class="nav-link" routerLink="register"><i class="fa fa-users">Sign Up</i></a>
+      </li>
+      <li class="nav-item" style="font-size: 24px;">
+        <a href="/login" class="nav-link" routerLink="login"><i class="fa fa-sign-in" aria-hidden="true">Login</i></a>
+      </li>
+    </ul>
+    
+    <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
+      <li class="nav-item">
+        <a href="/profile" class="nav-link" routerLink="profile"><i class="fas fa-user-shield">{{ username }}</i></a>
+      </li>
+      <li class="nav-item">
+        <a href class="nav-link" (click)="logout()"><i class="fas fa-sign-out-alt">Logout</i></a>
+      </li>
+    </ul>
+  </nav>
+  
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</div> -->
+<app-header></app-header>
+<app-footer></app-footer>
